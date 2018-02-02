@@ -28,6 +28,10 @@ defmodule AmazonItemSearch.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:erlsom, "~> 1.4"},
+      {:httpoison, "~> 1.0"},
+      {:jason, "~> 1.0"}
+    ]
   end
 end

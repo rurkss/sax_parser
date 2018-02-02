@@ -2,7 +2,7 @@ defmodule AmazonItemSearchTest do
   use ExUnit.Case
   doctest AmazonItemSearch
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "parse xml by erlsom" do
+    assert {:ok, _element, _tail} = Amazon.ItemSearch.parse_xml()
   end
 end
