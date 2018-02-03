@@ -16,7 +16,7 @@ defmodule Amazon.ItemSearch do
     {:ok, {}, []}
   end
 
-  def attr({:startElement, _url, 'Items', _, _}, acc) do
+  def attr({:startElement, _url, 'Item', _, _}, acc) do
     [%Item{} | acc]
   end
 
