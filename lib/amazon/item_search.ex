@@ -47,5 +47,5 @@ defmodule Amazon.ItemSearch do
   defp _pointer('CurrencyCode'), do: :currency
   defp _pointer('Title'), do: :title
   defp _pointer('DetailPageURL'), do: :buyurl
-  defp _pointer(attr), do: nil
+  defp _pointer(_attr), do: nil
 end
